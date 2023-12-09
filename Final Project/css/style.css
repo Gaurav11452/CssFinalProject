@@ -1,0 +1,379 @@
+/*Custom Font Face*/
+@font-face {
+    font-family: 'Kdam Thmor Pro';
+    src: url(../fonts/Kdam_Thmor_Pro/KdamThmorPro-Regular.ttf);
+    font-style: normal;
+}
+/*NavBar*/
+.electro-nav {
+    background-color: #000000; 
+}
+
+/* Footer */
+.electro-footer {
+    background-color: #000000; 
+    color: #ffffff;
+}
+/*Styling for Body*/
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    color: #333;
+}
+/*NavBar*/
+.electro-nav {
+    color: #ffffff;
+    padding: 10px 0;
+}
+/*Header Company Name*/
+.electro-brand-link {
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    color: #ffffff;
+}
+/*Header Logo*/
+.electro-brand-logo {
+    width: 30px; 
+    height: 30px;
+    margin-right: 10px; 
+}
+/*Adjusting NavBar*/
+.electro-container-nav {
+    max-width: 1200px;
+    margin: 0 auto; 
+    padding: 0 20px; 
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.electro-brand {
+    display: inline-block;
+    color: #ffffff;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 24px;
+}
+
+.electro-toggler {
+    border: none;
+    background: transparent;
+    cursor: pointer;
+    display: none;
+}
+/*Using flex display*/
+.electro-row {
+    display: flex;
+    justify-content: flex-end;
+}
+/*NavBar Items*/
+.electro-nav-list {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+/*Setting 0 margin for NavBar Items*/
+.electro-nav-item {
+    margin: 0;
+}
+/*Styling of all the links*/
+.electro-nav-link {
+    display: block;
+    padding: 10px 15px;
+    text-decoration: none;
+    color: #ffffff;
+}
+/*Hover effect on NavBar Items*/
+.electro-nav-link:hover {
+    background-color: #555;
+    color: gold;
+    transition: color 0.3s ease-in-out;
+}
+/*Designing Footer*/
+.electro-footer {
+    background-color: #343a40;
+    color: #ffffff;
+    text-align: center;
+    padding: 20px 0;
+}
+
+.electro-footer-text {
+    margin: 5px 0;
+}
+
+.electro-footer-contact a {
+    color: #ffffff;
+    text-decoration: underline;
+}
+/*Styling for home page main text and image*/
+.electro-hero {
+    background-color: #f8f9fa; 
+    color: #000000;
+    padding: 120px 0;
+    text-align: center;
+    background-image: url("/images/3.png");
+}
+
+.electro-hero-section {
+    display: flex;
+    justify-content: center;
+}
+/*Styling of the main title*/
+.electro-hero-title {
+    font-size: 3rem; 
+    margin-bottom: 20px;
+}
+
+.electro-hero-description {
+    font-size: 1.2rem; 
+    margin-bottom: 20px;
+}
+/*Styling the button*/
+.electro-hero-btn {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: #ffffff;
+    text-decoration: none;
+    border-radius: 5px;
+    font-size: 1rem; 
+}
+/*Hover effect to change background color*/
+.electro-hero-btn:hover {
+    background-color: #0056b3;
+}
+
+.electro-products {
+    padding: 50px 0;
+}
+
+.electro-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 15px;
+    
+}
+
+.electro-row {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0 -10px; 
+}
+/*This is to calculate the exact width*/
+.electro-col {
+    flex: 0 0 calc(100% / 3 - 20px); 
+    max-width: calc(100% / 3 - 20px); 
+    padding: 0 10px; 
+    margin-bottom: 20px;
+
+}
+/*Styling the product cards*/
+.electro-card {
+    background-color: #ffffff;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+}
+
+.electro-card img {
+    width: 100%;
+    height: auto;
+}
+/*Hover effect on cards*/
+.electro-card :hover{
+    transform: scale(1.05);
+    transition: transform 0.3s ease-in-out;
+}
+
+.electro-card-header {
+    padding: 15px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.electro-card-badge {
+    width: 35px;
+    height: 35px;
+    background-color: #17a2b8;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.electro-badge-text {
+    color: #ffffff;
+    margin: 0;
+}
+
+.electro-card-body {
+    padding: 15px;
+}
+/*Styling the footer of cards*/
+.electro-card-details,
+.electro-card-footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 5px;
+}
+
+.electro-card-link {
+    color: #6c757d;
+    text-decoration: none;
+}
+/*Changing the color and underlining the text*/
+.electro-card-link:hover {
+    color: #0056b3;
+    text-decoration: underline;
+}
+
+.electro-card-price {
+    margin: 0;
+    font-weight: bold;
+}
+
+.electro-card-availability {
+    margin: 0;
+}
+/*Putting some animations on the button*/
+.electro-btn {
+    display: block;
+    width: 150px;
+    margin: 20px auto;
+    padding: 10px 15px;
+    text-align: center;
+    color: #ffffff;
+    background-color: #007bff;
+    border: none;
+    border-radius: 5px;
+    text-decoration: none;
+    transition: background-color 0.3s ease;
+}
+
+.electro-btn:hover {
+    background-color: #0056b3;
+}
+/*First section of about page*/
+.section-our-story {
+    padding: 50px 0;
+}
+
+.electro-row {
+    
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.electro-row-story-content {
+    flex: 1;
+    margin: 10px;
+    padding: 10px;
+    font-family: 'Bad Script', cursive;
+    color: chocolate;
+}
+
+.electro-row-story-content h2{
+    font-family: 'Dancing Script', cursive;
+    font-size: 30px;
+    color:#343a40;
+}
+
+.electro-row-story-image {
+    flex: 1;
+}
+
+.electro-row-story-image :hover{
+    transform: scale(1.1);
+}
+
+.electro-row-img-fluid {
+    
+    width: 100%;
+    height: auto;
+}
+/*Styling for the contact form*/
+.electro-contact-form {
+    margin-bottom: 30px;
+}
+/*Labels of the form*/
+label{
+    font-family: 'Dancing Script', cursive;
+    font-weight: bolder;
+    font-size: 23px;
+    color: cadetblue;
+}
+/*Using custom font*/
+.electro-contact-form h2{
+    font-family: 'Kdam Thmor Pro';
+    font-weight: bold;
+    font-size: 30px;
+}
+
+.electro-form-group {
+    margin-bottom: 20px;
+}
+
+.electro-form-control {
+    width: 100%;
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+}
+/*Transition effect on button*/
+.electro-btn {
+    padding: 10px 20px;
+    border-radius: 5px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.electro-btn:hover {
+    background-color: #0056b3;
+}
+
+.electro-contact-info {
+    margin-bottom: 30px;
+}
+/*Making the font stylish of strong tag*/
+strong{
+    font-family: 'Dancing Script', cursive;
+    font-weight: bolder;
+    font-size: 23px;
+    color: cadetblue;
+}
+/*Custom Font*/
+.electro-contact-info h2{
+    font-family: 'Kdam Thmor Pro';
+    font-weight: bold;
+    font-size: 30px;
+}
+
+.electro-contact-list {
+    list-style: none;
+    padding-left: 0;
+}
+
+.electro-contact-list li {
+    margin-bottom: 10px;
+}
+
+.electro-float-bottom {
+    bottom: 0;
+    left: 0; 
+    width: 100%; 
+    
+}
+/*Using media screen to adjust the images*/
+@media (max-width: 700px) {
+  .electro-row{
+    flex-direction: column;
+  }
+}
